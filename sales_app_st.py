@@ -2,8 +2,8 @@ import pandas as pd
 import joblib
 import streamlit as st
 
-model = joblib.load('sales_model.pkl')
-encoder = joblib.load('sales_encoder.pkl')
+model = joblib.load('adm_model.pkl')
+encoder = joblib.load('adm_encoder.pkl')
 
 region = st.text_input("what is your region north/south: ")
 age = st.number_input("how old are you?: ")
